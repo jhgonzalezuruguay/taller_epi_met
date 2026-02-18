@@ -1,7 +1,39 @@
 library(shiny)
 
 ui <- navbarPage("Taller de Epistemología y Metodología",
-                 
+                                  
+                                  tags$head(
+                                    tags$style(HTML("
+                     
+                     /* Botones normales */
+                     .btn,
+                     .btn-default,
+                     .btn-primary {
+                       background-color: #90EE90 !important;
+                       border-color: #90EE90 !important;
+                       color: black !important;
+                       background-image: none !important;
+                     }
+                     
+                     /* Estados hover, focus y active */
+                     .btn:hover,
+                     .btn:focus,
+                     .btn:active,
+                     .btn-default:hover,
+                     .btn-default:focus,
+                     .btn-default:active,
+                     .btn-primary:hover,
+                     .btn-primary:focus,
+                     .btn-primary:active {
+                       background-color: #90EE90 !important;
+                       border-color: #90EE90 !important;
+                       color: black !important;
+                       box-shadow: none !important;
+                       outline: none !important;
+                     }
+                     
+                   "))
+                                  ),                 
                  tabPanel("Capítulo I: Epistemología y Metodología",
                           
                           h3("La articulación del campo epistemológico y metodológico"),
