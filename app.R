@@ -1,6 +1,6 @@
 library(shiny)
 
-ui <- navbarPage("Taller de Epistemología y Metodología",
+ui <- navbarPage("Taller de Epistemología y Metodología - Mag. José González",
                                   
                                   tags$head(
                                     tags$style(HTML("
@@ -195,3 +195,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
